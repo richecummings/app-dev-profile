@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var logoImg: UIImageView!
+    @IBOutlet weak var customizeDashboardBtn: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        logoImg.layer.cornerRadius = 10
+        customizeDashboardBtn.layer.cornerRadius = 10
     }
 
     override func didReceiveMemoryWarning() {
